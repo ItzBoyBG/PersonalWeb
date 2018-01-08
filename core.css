@@ -1,0 +1,254 @@
+html {
+    height: 100%;
+    width: 100%;
+     -webkit-user-select: none;  /* Chrome all / Safari all */
+     -moz-user-select: none;     /* Firefox all */
+     -ms-user-select: none;      /* IE 10+ */
+      user-select: none;          /* Likely future */  
+}
+body {
+    background: black;
+}
+video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -9999;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+    transition: 1s opacity;
+}
+.video {
+    overflow: hidden;
+}
+.video-fallback {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.volume-button {
+    font-size: 20px;
+    position: absolute;
+    z-index: 25;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    color: #F00;
+}
+.stop-button {
+    font-size: 18px;
+    position: absolute;
+    z-index: 25;
+    top: 20px;
+    left: 50px;
+    cursor: pointer;
+    color: #fff;
+}
+.pageoverlay {
+    display: block;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.overlay:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    background: url(../images/overlay.png);
+    background-repeat: repeat;
+}
+.mask:before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+.lightbox {
+    color: #FFFFFF;
+    margin: 18% auto;
+}
+#sexytime {
+    font-size: 16px;
+    left: 0;
+    max-width: 1000px;
+    position: absolute;
+    top: 0;
+}
+hr {
+    background: red;
+    border: 0;
+    border-top: 1px solid white;
+    box-shadow: 0.1em 0.1em 0.2em black;
+    margin: auto auto;
+    max-width: 447;
+    width: 100%;
+}
+#thiiings {
+    color: #000000;
+    font-size: 9px;
+}
+#thiiings:hover::before {
+    background-image: none;
+    color: #F00!important;
+    font-size: 9px!important;
+    height: auto!important;
+    padding: 5px;
+    text-align: justify!important;
+    transition: all 0.15s ease-in;
+    width: 150px;
+}
+#thiiings a {
+    color: #BD1E1E;
+    text-decoration: none;
+}
+html,
+body {
+    height: 100%;
+}
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	font-family: 'Carter One', cursive;
+}
+* {
+    outline: none;
+}
+body {
+    background: #000000 no-repeat center bottom;
+    color: #F00;
+    font: normal 16px/1.2 unseen, sans-serif;
+    margin: 0;
+    text-shadow: 3px 4px #000000;
+}
+.awrapper {
+    align-content: center;
+    background-size: cover;
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 100%;
+    ms-flex-direction: row;
+    ms-flex-line-pack: center;
+    ms-flex-pack: center;
+    ms-flex-wrap: wrap;
+    webkit-align-content: center;
+    webkit-flex-direction: row;
+    webkit-flex-wrap: wrap;
+    webkit-justify-content: center;
+}
+::selection {
+    background-color: #000000;
+    color: #FF;
+    text-shadow: none;
+}
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+a:hover,
+a:active {
+    color: #F00;
+    outline: none;
+}
+.titles {
+    text-align: center;
+    width: 100%;
+}
+h1,
+h2 {
+    font-size: 7.0em;
+    font-weight: 400;
+    margin: 0;
+}
+h2 {
+    font-size: 2em;
+}
+h3 {
+    font-weight: normal;
+}
+h1>a {
+    transition: color 0.5s ease;
+}
+.links {
+    font-size: 16px;
+    list-style: circle;
+    margin-bottom: 0;
+    padding: 0;
+    padding-left: 20px;
+}
+.links li {
+    margin-bottom: 0.6em;
+}
+.links li:last-child {
+    margin-bottom: 0;
+}
+.links p {
+    color: #000000;
+    margin: 0.6em 0 0 0.5em;
+}
+.media {
+    font-size: 30px;
+    text-align: center;
+}
+.media>a {
+    margin-right: 45px;
+    text-decoration: none;
+    transition: color 0.5s ease;
+}
+.media>a#vk {
+    font-size: 35px;
+}
+.media>a:last-child {
+    margin-right: 0;
+}
+/* ---- stats.js ---- */
+
+.js-count-particles {
+    font-size: 1.1em;
+}
+#stats,
+.count-particles {
+    -webkit-user-select: none;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+#stats {
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+}
+.count-particles {
+    border-radius: 0 0 3px 3px;
+}
+/* ---- particles.js container ---- */
+
+#particles-js {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+}
